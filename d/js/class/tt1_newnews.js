@@ -1,0 +1,1 @@
+document.write("<li><a href=\"/foot-team/2016-07-30/91.html\" title=\"中国搜索\">中国搜索</a></li>");

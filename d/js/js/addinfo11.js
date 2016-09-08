@@ -1,0 +1,1 @@
+document.write("<option value=\'10\' style=\'background:#99C4E3\'>|-活动征集</option>");

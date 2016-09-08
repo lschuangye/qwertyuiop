@@ -1,0 +1,1 @@
+document.write("<li><a href=\"/news/2016-08-15/120.html\" title=\"戴军中国旅途行亮相重庆\"><strong>戴军中国旅途行亮相重庆</strong></a></li><li><a href=\"/news/2016-07-27/66.html\" title=\"中方谴责越南边检污损中国护照：无耻懦夫\">中方谴责越南边检污损中国护照：无耻</a></li>");

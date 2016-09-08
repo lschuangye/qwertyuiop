@@ -1,0 +1,27 @@
+<?php
+@include("../../inc/header.php");
+
+/*
+		SoftName : EmpireBak
+		Author   : wm_chief
+		Copyright: Powered by www.phome.net
+*/
+
+E_D("DROP TABLE IF EXISTS `phome_enewsnewstemp`;");
+E_C("CREATE TABLE `phome_enewsnewstemp` (
+  `tempid` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
+  `tempname` varchar(60) NOT NULL DEFAULT '',
+  `isdefault` tinyint(1) NOT NULL DEFAULT '0',
+  `temptext` mediumtext NOT NULL,
+  `showdate` varchar(50) NOT NULL DEFAULT '',
+  `modid` smallint(6) NOT NULL DEFAULT '0',
+  `classid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`tempid`),
+  KEY `classid` (`classid`)
+) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8");
+E_D("replace into `phome_enewsnewstemp` values('10','默认视频内容模板','0','<!doctype html>\r\n<html>\r\n<head>\r\n<meta charset=\\\\\"UTF-8\\\\\">\r\n<title>[!--pagetitle--]</title>\r\n<meta name=\\\\\"keywords\\\\\" content=\\\\\"[!--pagekey--]\\\\\" />\r\n<meta name=\\\\\"description\\\\\" content=\\\\\"[!--pagedes--]\\\\\" />\r\n<link rel=\\\\\"stylesheet\\\\\" href=\\\\\"/css/ui.css?344\\\\\" type=\\\\\"text/css\\\\\" media=\\\\\"all\\\\\">\r\n<link rel=\\\\\"stylesheet\\\\\" href=\\\\\"/css/global.css\\\\\" type=\\\\\"text/css\\\\\" media=\\\\\"all\\\\\">\r\n<script type=\\\\\"text/javascript\\\\\" src=\\\\\"/jwplayer/jwplayer.js\\\\\"></script>\r\n</head>\r\n\r\n<body>\r\n<div class=\\\\\"homeTop\\\\\" id=\\\\\"subTopHeader\\\\\">\r\n  <div class=\\\\\"homeTopWrap\\\\\">\r\n[!--temp.topMenuVar--]\r\n    <div class=\\\\\"clear\\\\\"></div>\r\n    [!--temp.topPicVar--]\r\n    <div class=\\\\\"clear\\\\\"></div>\r\n  </div>\r\n</div>\r\n<div class=\\\\\"subTop\\\\\">\r\n  <p>当前位置：[!--newsnav--]</p>\r\n</div>\r\n<div class=\\\\\"clear\\\\\"></div>\r\n<div class=\\\\\"boxWrap\\\\\">\r\n  <div class=\\\\\"boxWrap-title\\\\\">\r\n    <p><span></span>[!--class.name--]</p>\r\n  </div>\r\n  <div class=\\\\\"content-box\\\\\">\r\n    <div id=\\\\\"jwplayer\\\\\">视频正在加载，请稍后... ...</div>\r\n    <script type=\\\\\"text/javascript\\\\\">\r\n    jwplayer(\\\\\"jwplayer\\\\\").setup({\r\n        file: \\\\\"[!--file--]\\\\\",\r\n        image: \\\\\"[!--bigpic--]\\\\\",\r\n		width: 960,//播放器宽\r\n		height:480,//播放器高\r\n    });\r\n</script> \r\n  </div>\r\n</div>\r\n<div class=\\\\\"v-other-list\\\\\">\r\n  <ul>\r\n[ecmsinfo]\\\\''selfinfo\\\\'',7,32,0,0,14,0[/ecmsinfo]  </ul>\r\n  <div class=\\\\\"clear\\\\\"></div>\r\n</div>\r\n[!--temp.footer--]\r\n</body>\r\n</html>\r\n','Y-m-d H:i:s','1','0');");
+E_D("replace into `phome_enewsnewstemp` values('11','公共内容内容模板','0','<!doctype html>\r\n<html>\r\n<head>\r\n<meta charset=\\\\\"UTF-8\\\\\">\r\n<title>[!--pagetitle--]</title>\r\n<meta name=\\\\\"keywords\\\\\" content=\\\\\"[!--pagekey--]\\\\\" />\r\n<meta name=\\\\\"description\\\\\" content=\\\\\"[!--pagedes--]\\\\\" />\r\n<link rel=\\\\\"stylesheet\\\\\" href=\\\\\"/css/ui.css?344\\\\\" type=\\\\\"text/css\\\\\" media=\\\\\"all\\\\\">\r\n<link rel=\\\\\"stylesheet\\\\\" href=\\\\\"/css/global.css\\\\\" type=\\\\\"text/css\\\\\" media=\\\\\"all\\\\\">\r\n<script type=\\\\\"text/javascript\\\\\" src=\\\\\"/jwplayer/jwplayer.js\\\\\"></script>\r\n</head>\r\n\r\n<body>\r\n<div class=\\\\\"homeTop\\\\\" id=\\\\\"subTopHeader\\\\\">\r\n  <div class=\\\\\"homeTopWrap\\\\\"> [!--temp.topMenuVar--]\r\n    <div class=\\\\\"clear\\\\\"></div>\r\n    [!--temp.topPicVar--]\r\n    <div class=\\\\\"clear\\\\\"></div>\r\n  </div>\r\n</div>\r\n<div class=\\\\\"subTop\\\\\">\r\n  <p>当前位置：[!--newsnav--]</p>\r\n</div>\r\n<div class=\\\\\"clear\\\\\"></div>\r\n<div class=\\\\\"boxWrap\\\\\">\r\n  <div class=\\\\\"boxWrap-title\\\\\">\r\n    <p><span></span>[!--class.name--]</p>\r\n  </div>\r\n  <div class=\\\\\"content-box\\\\\" id=\\\\\"content-box-contnet\\\\\">\r\n    <div class=\\\\\"content-box-title\\\\\">[!--title--]</div>\r\n    <div class=\\\\\"content-box-content\\\\\">[!--newstext--]</div>\r\n  </div>\r\n</div>\r\n[!--temp.footer--]\r\n</body>\r\n</html>\r\n','Y-m-d H:i:s','12','0');");
+E_D("replace into `phome_enewsnewstemp` values('12','其他页面内容模板','0','<!doctype html>\r\n<html>\r\n<head>\r\n<meta charset=\\\\\"UTF-8\\\\\">\r\n<title>[!--pagetitle--]</title>\r\n<meta name=\\\\\"keywords\\\\\" content=\\\\\"[!--pagekey--]\\\\\" />\r\n<meta name=\\\\\"description\\\\\" content=\\\\\"[!--pagedes--]\\\\\" />\r\n<link rel=\\\\\"stylesheet\\\\\" href=\\\\\"/css/ui.css?344\\\\\" type=\\\\\"text/css\\\\\" media=\\\\\"all\\\\\">\r\n<link rel=\\\\\"stylesheet\\\\\" href=\\\\\"/css/global.css\\\\\" type=\\\\\"text/css\\\\\" media=\\\\\"all\\\\\">\r\n</head>\r\n\r\n<body>\r\n[!--temp.header-2--]\r\n<div class=\\\\\"mainBody\\\\\">\r\n  <div class=\\\\\"mainBody-wrap\\\\\">\r\n    <div class=\\\\\"position\\\\\"><span class=\\\\\"name\\\\\">[!--class.name--]</span><span class=\\\\\"current\\\\\">当前位置：[!--newsnav--]</span></div>\r\n    <div class=\\\\\"clear\\\\\"></div>\r\n    <div class=\\\\\"mainBody-content\\\\\">\r\n      <div class=\\\\\"mainBody-content-T\\\\\">[!--title--]</div>\r\n      <div class=\\\\\"clear\\\\\"></div>\r\n      <div class=\\\\\"mainBody-content-body\\\\\">[!--newstext--]</div>\r\n    </div>\r\n  </div>\r\n</div>\r\n[!--temp.footer--]\r\n</body>\r\n</html>','Y-m-d H:i:s','12','0');");
+
+@include("../../inc/footer.php");
+?>

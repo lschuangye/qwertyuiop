@@ -1,0 +1,13 @@
+@charset "utf-8";
+@font-face {
+  font-family: 'rzbg';
+  src: url('../font/rzbg.eot');/*IE9 Compat Modes*/
+  src:
+    url('../font/rzbg.eot?#font-spider') format('embedded-opentype'),
+    url('../font/rzbg.woff') format('woff'),
+    url('../font/rzbg.ttf') format('truetype'),
+    url('../font/rzbg.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
