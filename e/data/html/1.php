@@ -34,11 +34,14 @@ if(!defined('InEmpireCMS'))
 	<?=$ftnr['ftname']?>
       </select></td>
   </tr>
-</table></td></tr><tr><td width='16%' height=25 bgcolor='ffffff'>小图</td><td bgcolor='ffffff'><input name="titlepic" type="text" id="titlepic" value="<?=$ecmsfirstpost==1?"":ehtmlspecialchars(stripSlashes($r[titlepic]))?>" size="45">
+</table></td><td height="25" bgcolor="#FFFFFF">外部链接: 
+      <input name="titleurl" type="text" value="<?=stripSlashes($r[titleurl])?>" size="49"></td></tr><tr><td width='16%' height=25 bgcolor='ffffff'>小图</td><td bgcolor='ffffff'><input name="titlepic" type="text" id="titlepic" value="<?=$ecmsfirstpost==1?"":ehtmlspecialchars(stripSlashes($r[titlepic]))?>" size="45">
 <a onclick="window.open('ecmseditor/FileMain.php?type=1&classid=<?=$classid?>&infoid=<?=$id?>&filepass=<?=$filepass?>&sinfo=1&doing=1&field=titlepic','','width=700,height=550,scrollbars=yes');" title="选择已上传的图片"><img src="../data/images/changeimg.gif" border="0" align="absbottom"></a></td></tr><tr><td width='16%' height=25 bgcolor='ffffff'>发布时间</td><td bgcolor='ffffff'><input name="newstime" type="text" value="<?=$r[newstime]?>"><input type=button name=button value="设为当前时间" onclick="document.add.newstime.value='<?=$todaytime?>'"></td></tr><tr><td width='16%' height=25 bgcolor='ffffff'>视频大图</td><td bgcolor='ffffff'>
 <input name="bigpic" type="text" id="bigpic" value="<?=$ecmsfirstpost==1?"":ehtmlspecialchars(stripSlashes($r[bigpic]))?>" size="60">
 <a onclick="window.open('ecmseditor/FileMain.php?type=1&classid=<?=$classid?>&infoid=<?=$id?>&filepass=<?=$filepass?>&sinfo=1&doing=1&field=bigpic','','width=700,height=550,scrollbars=yes');" title="选择已上传的图片"><img src="../data/images/changeimg.gif" border="0" align="absbottom"></a> 
 </td></tr><tr><td width='16%' height=25 bgcolor='ffffff'>视频文件</td><td bgcolor='ffffff'>
 <input name="file" type="text" id="file" value="<?=$ecmsfirstpost==1?"":ehtmlspecialchars(stripSlashes($r[file]))?>" size="60">
 <a onclick="window.open('ecmseditor/FileMain.php?type=0&classid=<?=$classid?>&infoid=<?=$id?>&filepass=<?=$filepass?>&sinfo=1&doing=1&field=file','','width=700,height=550,scrollbars=yes');" title="选择已上传的文件"><img src="../data/images/changefile.gif" border="0" align="absbottom"></a>
+</td></tr><tr><td width='16%' height=25 bgcolor='ffffff'>链接地址</td><td bgcolor='ffffff'>
+<input name="link" type="text" id="link" value="<?=$ecmsfirstpost==1?"":ehtmlspecialchars(stripSlashes($r[link]))?>" size="60">
 </td></tr></table>

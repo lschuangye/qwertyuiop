@@ -1,15 +1,10 @@
-<?php
-if(!defined('InEmpireCMS'))
-{
-	exit();
-}
-?><!doctype html>
+<!doctype html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>[!--pagetitle--]</title>
-<meta name="keywords" content="[!--pagekey--]" />
-<meta name="description" content="[!--pagedes--]" />
+<title>热门视频</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
 <link href="/d/file/8e4e53d801c13e53a21e9bc7cb42abe2.ico" rel="icon" type="image/x-icon" />
 <link rel="stylesheet" href="/css/ui.css?344" type="text/css" media="all">
 <link rel="stylesheet" href="/css/global.css" type="text/css" media="all">
@@ -19,8 +14,7 @@ if(!defined('InEmpireCMS'))
 <div class="homeTop" id="subTopHeader">
   <div class="homeTopWrap"> <div class="topMenu">
       <ul>
-        <? @sys_ShowClassByTemp('0',1,0,9);?>
-      </ul>
+         <li><a href="/index.html">首页</a></li><li><a href="/remen/">热门视频</a></li><li><a href="/foot-team/">推荐企业</a></li><li><a href="/contact-us/">联系我们</a></li><li><a href="/news/">央影新片</a></li><li><a href="/cai-bian/">采编中心</a></li><li><a href="/about-company/">公司简介</a></li><li><a href="/myteam/">团队介绍</a></li>      </ul>
     </div>
     <div class="clear"></div>
     <div class="topImg"><img src="/images/banner.jpg" /></div>
@@ -28,25 +22,28 @@ if(!defined('InEmpireCMS'))
   </div>
 </div>
 <div class="subTop">
-  <p>当前位置：[!--newsnav--]</p>
+  <p>当前位置：<a href="/index.html">首页</a>&nbsp;->&nbsp;<a href="/remen/">热门视频</a></p>
 </div>
 <div class="clear"></div>
-<div class="team-jion">
+<div class="boxWrap">
   <div class="boxWrap-title">
-    <p><span></span>[!--class.name--]</p>
+    <p><span></span>热门视频</p>
   </div>
   <ul>
-    [!--empirenews.listtemp--]<!--list.var1-->[!--empirenews.listtemp--]
+        <li><a href="/remen/2016-09-11/192.html"><img src="./d/file/f6d4a32c6d233e19c2fb29e7f5d5a896.png" alt="央影一套" /></a>
+      <p><a href="/remen/2016-09-11/192.html" title="央影一套">央影一套</a></p>
+    </li>    <li><a href="/remen/2016-09-11/191.html"><img src="./d/file/d177cc41c2b91f9114e1093175644ebf.jpg" alt="央视一套" /></a>
+      <p><a href="/remen/2016-09-11/191.html" title="央视一套">央视一套</a></p>
+    </li>
     <div class="clear"></div>
-    <div class="pagelist">[!--show.listpage--]</div>
+    <div class="pagelist"></div>
   </ul>
 </div>
 <div class="foot">
   <div class="footer">
     <div class="footer-menu">
      <!-- <ul>
-        <? @sys_ShowClassByTemp('0',13,0,11);?>
-      </ul>-->
+         <a href="/index.html">首页</a><span>|</span><a href="/remen/">热门视频</a><span>|</span><a href="/foot-team/">推荐企业</a><span>|</span><a href="/contact-us/">联系我们</a><span>|</span><a href="/news/">央影新片</a><span>|</span><a href="/cai-bian/">采编中心</a><span>|</span><a href="/about-company/">公司简介</a><span>|</span><a href="/myteam/">团队介绍</a><span>|</span>      </ul>-->
 <ul>
         <a href="http://tv.cctv.com/">央视网</a>
 <span>|</span>

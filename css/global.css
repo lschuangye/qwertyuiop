@@ -1,7 +1,8 @@
 ﻿@charset "UTF-8";
 /* CSS Document */
 *{margin:0; padding:0; font-family:"微软雅黑", "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;}
-body{padding:0; margin:0; background:#96afb7;}
+body{padding:0; margin:0;
+    background: #ffffff;;}
 img{border:none;}
 li{list-style:none;}
 a{text-decoration:none;transition: all 0.5s ease 0s;}
@@ -10,7 +11,7 @@ a{text-decoration:none;transition: all 0.5s ease 0s;}
 .homeTopWrap{width:960px; margin:0 auto;}
 .topMenu{height:37px;}
 .topMenu ul li{float:left; height:37px; line-height:37px; margin:0 15px;}
-.topMenu ul li a{color:cyan; font-family:rzbg; font-size:20px;}
+.topMenu ul li a{color:cyan; font-family:"Adobe 楷体 Std R"; font-size:20px;}
 .topMenu ul li a:hover{color:white;}
 .topAd{padding:5px 0;width:960px;margin:0 auto;}
 .topImg{height:155px; overflow:hidden;}
@@ -145,7 +146,7 @@ background : url(../images/nav.png) no-repeat;
 .notice ul li span a:hover{text-decoration:underline;}
 .notice-title{height:36px; line-height:36px; font-family:rzbg;font-size:24px; color:#4EDAFD; border-bottom:1px dotted; font-weight:bold;}
 .boxWrap{width:960px; margin:0 auto; margin-top:20px;}
-.boxWrap-title{background:#0385B6; height:48px; line-height:48px;}
+.boxWrap-title{background: #e50000; height:48px; line-height:48px;}
 .boxWrap-title p{background:url(../images/title-bg.jpg) center right no-repeat #0385B6; float:left; padding-right:100px;font-family:rzbg; font-size:24px; color:#BFFFFF; font-weight:bold;}
 .boxWrap-title p span{display:block; height:48px;float:left;}
 .boxWrap-title span{font-size:12px; float:right; padding-right:20px;}
@@ -157,14 +158,22 @@ background : url(../images/nav.png) no-repeat;
 .boxWrap ul li p{font-size:12px; line-height:16px; height:32px;}
 .boxWrap ul li p a{color:#333;}
 .boxWrap ul li p a:hover{text-decoration:underline;}
-.foot{width:100%; background:#05233D; margin-top:20px;}
+.foot{width:100%; background: #f60000; margin-top:20px;}
 .footer{width:960px; margin:0 auto;}
 .footer-menu { text-align:center;}
-.footer-menu {font-size:12px; height:40px; line-height:40px;}
+.footer-menu {font-size:16px; height:40px; line-height:40px;}
 .footer-menu span{padding:0 10px; color:#c2dde6;}
-.footer-menu a{color:#c2dde6;}
-.footer-menu a:hover{color:#fff; text-decoration:underline;}
-.footer-info{font-size:12px; color:#c2dde6; line-height:30px; text-align:center;}
+.footer-menu a{color: #fff;}
+.footer-menu a:hover{color:#000; text-decoration:underline;}
+.footer-info{font-size:12px; color:#fff; line-height:30px; text-align:center;}
+.outlinks{
+    text-align:center;
+    font-size:16px; height:40px; line-height:40px;
+}
+.outlinks span{padding: 0 10px;}
+.outlinks a{
+    color:#000;
+}
 .team-jion{width:960px; margin:0 auto;}
 .team-jion ul{background:#fff; padding:5px;}
 .team-jion ul li{float:left;}
